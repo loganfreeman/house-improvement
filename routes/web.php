@@ -24,3 +24,8 @@ Route::get('/admin', 'AdminController@index');
 
 Route::get('login/github', 'Auth\LoginController@redirectToProvider');
 Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

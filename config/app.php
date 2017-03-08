@@ -181,7 +181,8 @@ return [
 
         Laravel\Socialite\SocialiteServiceProvider::class,
 
-        Zizaco\Entrust\EntrustServiceProvider::class,
+        TCG\Voyager\VoyagerServiceProvider::class,
+
 
     ],
 
@@ -236,7 +237,6 @@ return [
 
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
-        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
 
     ],
 
